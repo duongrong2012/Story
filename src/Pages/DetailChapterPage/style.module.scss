@@ -1,0 +1,100 @@
+.DetailChapterPageContainer {
+    :global {
+        .reading-screen-container {
+            background-color: #e5e4db;
+
+            .containerClassname {
+                background-color: white;
+                padding: 20px;
+            }
+
+            .reading-screen {
+                margin-top: 75px;
+                padding: 10px 60px;
+                border: 1px solid #d8d8d8;
+                width: 900px;
+
+                & * {
+                    font-family: inherit;
+                }
+
+                .chapter-header {
+                    gap: 10px;
+                    margin-bottom: 30px;
+
+                    .story-name {
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+
+                    .chapter-number {
+                        font-size: 16px;
+
+                    }
+
+                    .uploader-container {
+                        font-size: 16px;
+                        gap: 4px;
+                        align-items: flex-end;
+
+                        .uploader {
+                            font-size: 24px;
+                            color: var(--author-color);
+                            font-weight: 700;
+                            line-height: 22px;
+                        }
+                    }
+
+                    .created-at {
+                        font-size: 16px;
+                    }
+                }
+
+                .chapter-content-container {
+                    text-align: justify;
+                    white-space: pre-wrap;
+                }
+            }
+        }
+
+        .control-chapter-container {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            height: 60px;
+            width: 580px;
+            flex-direction: row;
+            font-size: 18px !important;
+
+            .first-chapter {
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            .prevChapter-container {
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                height: 100%;
+
+                &:hover * {
+                    color: red;
+                }
+            }
+
+            .seperator {
+                height: 35px;
+                border-right: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+            .next-container {
+                justify-content: center;
+                cursor: pointer;
+                align-items: center;
+                height: 100%;
+
+                &:hover * {
+                    color: red;
+                }
+            }
+        }
+    }
+}
